@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="icon" href="static/assets/favicon.ico">
+    <link rel="stylesheet" href="static/styles.css">
+    <title>Cafe & Wifi API</title>
+</head>
+<body>
+    <div class = "title">
+        <h1>Welcome to the Cafe & Wifi API</h1>
+    </div>
+          
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+            <div class="card border-secondary mb-3 shadow p-3 mb-5 bg-body rounded" style="max-width: 700px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="static/images/rest_logo.png" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">GET</h5>
+                      <p class="card-text"><h6><li>All Cafes</li></h6>
+                        <p>- Returns details of all the cafes in database.</p>
+                        <h6><li>Random Cafe</li></h6>
+                        <p>- Returns details of a random cafe from database.</p>
+                        <h6><li>Cafe from Location</li></h6>
+                        <p>- Returns a cafe from given location.</p>
+                        <p>- Parameter : loc (Location of cafe)</p>
+                    </p>
+                    <a class="btn btn-outline-secondary" href="https://documenter.getpostman.com/view/17925057/UVsPR5Wx#6222c1fe-cce8-422c-87b4-fa7e24f29fb2" role="button">Documentation</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="col">
+            <div class="card border-secondary mb-3 shadow p-3 mb-5 bg-body rounded" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="static/images/rest_logo.png" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">POST</h5>
+                      <p class="card-text"><h6><li>Add Cafe</li></h6>
+                        <p>- Adds details of cafe to database.</p>
+                        <p>Parameters : 
+                           name,
+                           map_url,
+                           img_url,
+                           loc,
+                           has_sockets,
+                           has_toilet,
+                           has_wifi,
+                           can_take_calls,
+                           seats,
+                           coffee_rice
+                           
+                        </p>
+                    </p>
+                    <a class="btn btn-outline-secondary" href="https://documenter.getpostman.com/view/17925057/UVsPR5Wx#6222c1fe-cce8-422c-87b4-fa7e24f29fb2" role="button">Documentation</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+         <div class="col">
+            <div class="card border-secondary mb-3 shadow p-3 mb-5 bg-body rounded" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="static/images/rest_logo.png" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">PATCH</h5>
+                      <p class="card-text"><h6><li>Update price of Cafe</li></h6>
+                        <p>- Updates the price of the cafe.</p>
+                        <p>- Parameter : new_price</p>
+                    </p>
+                    <a class="btn btn-outline-secondary" href="https://documenter.getpostman.com/view/17925057/UVsPR5Wx#6222c1fe-cce8-422c-87b4-fa7e24f29fb2" role="button">Documentation</a>
+                  </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card border-secondary mb-3 shadow p-3 mb-5 bg-body rounded" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="static/images/rest_logo.png" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">DELETE</h5>
+                      <p class="card-text"><h6><li>Delete Cafe</li></h6>
+                        <p>- Deletes details of cafe from database.</p>
+                        <p>- Parameter : apikey</p>
+                    </p>
+                    <a class="btn btn-outline-secondary" href="https://documenter.getpostman.com/view/17925057/UVsPR5Wx#6222c1fe-cce8-422c-87b4-fa7e24f29fb2" role="button">Documentation</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
